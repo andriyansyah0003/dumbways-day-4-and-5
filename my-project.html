@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Web - Andriyansyah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a4093da3da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="left-side">
+        <a href="index.html"
+          ><img src="img/brand.png" alt="logo" width="50px" height="35px"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-project.html" class="active">My Project</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a class="btn-contact-me" href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="container-contact">
+      <form action="">
+        <h1 class="header">ADD MY PROJECT</h1>
+        <div class="">
+          <label for="input-project-name">Project Name </label>
+          <input type="text" id="input-project-name" />
+        </div>
+        <div class="date">
+          <div class="start-date">
+            <label for="input-start-date">Start Date </label>
+            <input type="date" id="input-start-date" />
+          </div>
+
+          <div class="end-date">
+            <label for="input-end-date">End Date </label>
+            <input type="date" id="input-end-date" />
+          </div>
+        </div>
+
+        <div class="">
+          <label for="input-description">Description </label>
+          <textarea name="" id="input-description" rows="5"></textarea>
+        </div>
+        <label>Technologies </label>
+        <div class="container-checkbox">
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="node-js"
+              id="node-js"
+              value="Node Js"
+            />
+            <label for="node-js" class="checkbox-tech">Node Js</label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="react-js"
+              id="react-js"
+              value="React Js"
+            />
+            <label for="react-js" class="checkbox-tech">React Js</label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="next-js"
+              id="next-js"
+              value="Next Js"
+            />
+            <label for="next-js" class="checkbox-tech">Next Js</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="typeScript-js" id="typeScript-js" />
+            <label for="typeScript-js" class="checkbox-tech">TypeScript</label>
+          </div>
+        </div>
+        <label for="upload-image">image</label>
+        <div class="file">
+          <div class="file-input">choose</div>
+          <input type="file" id="upload-image" name="upload-image" required />
+          <i class="ri-attachment-2 attachment"></i>
+        </div>
+
+        <div class="btn-right">
+          <button class="btn-submit" type="button" onclick="addProjects()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="project-post">
+      <h1 class="header">My Project</h1>
+      <div class="grid-container" id="contents-projects"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
